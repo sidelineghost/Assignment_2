@@ -14,7 +14,7 @@ repeat = "y"
 while repeat == "y" or repeat == "Y":
 #queries for the values (initial, percentage-rate, total time, and compound division)
     init = float(input("How much do you want to initially invest? "))
-    prate = float(input("What is the interest rate in %? "))
+    prate = float(input("What is the interest rate in %? (eg. 3 for 3%) "))
     time = float(input("How many years are you investing it? "))
     comp = float(input("How often per year is it compounded? "))
 
@@ -40,8 +40,6 @@ Initially investing ${init:.2f}
 will give you ${final:.2f} 
 with a difference of ${diff:.2f} 
 ''')
-#the results are in. if I worked harder I could probably save all the variables in lists
-#to provide every detail about the best investment. but I didn't
     
     if len(Lfinal) > 1:
         best = max(Lfinal)
